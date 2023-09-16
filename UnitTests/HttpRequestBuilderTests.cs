@@ -39,9 +39,9 @@ namespace UnitTests
             HttpRequest request = director.GetRequest();
 
             // Assert
-            Assert.AreEqual("GET", request.Method); // Verifies if the HTTP method is set correctly.
-            Assert.IsNotNull(request.Headers);     // Verifies if headers are set (should not be null).
-            Assert.IsNull(request.Body);           // Verifies if the body is not set for a GET request.
+            Assert.AreEqual("GET", request.method); // Verifies if the HTTP method is set correctly.
+            Assert.IsNotNull(request.headers);     // Verifies if headers are set (should not be null).
+            Assert.IsNull(request.body);           // Verifies if the body is not set for a GET request.
         }
 
         /// <summary>
@@ -62,9 +62,9 @@ namespace UnitTests
             HttpRequest request = director.GetRequest();
 
             // Assert
-            Assert.AreEqual("POST", request.Method); // Verifies if the HTTP method is set correctly.
-            Assert.IsNotNull(request.Headers);      // Verifies if headers are set (should not be null).
-            Assert.IsNotNull(request.Body);         // Verifies if a body is set for a POST request.
+            Assert.AreEqual("POST", request.method); // Verifies if the HTTP method is set correctly.
+            Assert.IsNotNull(request.headers);      // Verifies if headers are set (should not be null).
+            Assert.IsNotNull(request.body);         // Verifies if a body is set for a POST request.
         }
     }
 }

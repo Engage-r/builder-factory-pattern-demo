@@ -1,12 +1,5 @@
 ﻿/******************************************************************************
  * Filename    = PostRequestBuilder.cs
- *
- * Author      = [Author Name]
- *
- * Product     = [Product Name]
- * 
- * Project     = [Project Name]
- *
  * Description = Constructs a POST HTTP request with specific method, URL, version, headers, and body.
  *****************************************************************************/
 
@@ -22,7 +15,7 @@ namespace BuilderDesignPatternDemo
         /// </summary>
         public override void SetMethod()
         {
-            request.Method = "POST";
+            request.method = "POST";
         }
 
         /// <summary>
@@ -30,7 +23,7 @@ namespace BuilderDesignPatternDemo
         /// </summary>
         public override void SetUrl()
         {
-            request.Url = "https://api.example.com/resource";
+            request.url = "https://api.example.com/resource";
         }
 
         /// <summary>
@@ -38,7 +31,7 @@ namespace BuilderDesignPatternDemo
         /// </summary>
         public override void SetVersion()
         {
-            request.Version = 1.1;
+            request.version = 1.1;
         }
 
         /// <summary>
@@ -46,7 +39,7 @@ namespace BuilderDesignPatternDemo
         /// </summary>
         public override void SetHeaders()
         {
-            request.Headers = new Dictionary<string, string>
+            request.headers = new Dictionary<string, string>
             {
                 { "Authorization", "Bearer <token>" },
                 { "Content-Type", "application/json" }
@@ -58,7 +51,7 @@ namespace BuilderDesignPatternDemo
         /// </summary>
         public override void SetBody()
         {
-            request.Body = "{ \"key\": \"value\" }"; // JSON request body
+            request.body = "{ \"key\": \"value\" }"; // JSON request body
         }
     }
 }

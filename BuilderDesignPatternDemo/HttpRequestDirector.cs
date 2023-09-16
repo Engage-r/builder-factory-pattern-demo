@@ -1,12 +1,5 @@
 ﻿/******************************************************************************
  * Filename    = HttpRequestDirector.cs
- *
- * Author      = [Author Name]
- *
- * Product     = [Product Name]
- * 
- * Project     = [Project Name]
- *
  * Description = Orchestrates the construction of an HTTP request using a builder.
  *****************************************************************************/
 

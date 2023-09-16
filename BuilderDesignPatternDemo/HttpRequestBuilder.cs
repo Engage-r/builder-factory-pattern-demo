@@ -1,12 +1,5 @@
 ﻿/******************************************************************************
  * Filename    = HttpRequestBuilder.cs
- *
- * Author      = [Author Name]
- *
- * Product     = [Product Name]
- * 
- * Project     = [Project Name]
- *
  * Description = Defines the interface for building an HTTP request.
  *****************************************************************************/
 
